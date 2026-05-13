@@ -29,6 +29,17 @@ export default function Hero() {
         aria-hidden="true"
       />
 
+      {/* Logo watermark — upper right */}
+      <div className="absolute top-20 right-8 md:right-16 z-10 pointer-events-none" aria-hidden="true">
+        <Image
+          src="/gbl-logo.png"
+          alt=""
+          width={90}
+          height={100}
+          style={{ filter: "brightness(0) invert(1)", opacity: 0.18 }}
+        />
+      </div>
+
       {/* Content — anchored to bottom */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 pt-32 w-full">
 

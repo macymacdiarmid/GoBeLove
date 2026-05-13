@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
@@ -14,8 +15,16 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16 border-b border-cream/10">
           <div className="md:col-span-2">
-            <Link href="/" className="font-display text-4xl text-cream block mb-4 tracking-wider">
-              GO BE LOVE
+            <Link href="/" className="inline-flex items-end gap-4 mb-4 group">
+              <Image
+                src="/gbl-logo.png"
+                alt="Go Be Love"
+                width={72}
+                height={80}
+                style={{ filter: "brightness(0) invert(1)", opacity: 0.9 }}
+                className="group-hover:opacity-100 transition-opacity"
+              />
+              <span className="font-display text-4xl text-cream tracking-wider leading-none pb-1">LOVE</span>
             </Link>
             <p className="font-body text-sm leading-relaxed max-w-xs text-cream/50">
               Purpose-driven streetwear. Every hoodie funds a child&apos;s education at Xhope Children&apos;s School in Uganda.

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, ShoppingBag, User } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
@@ -32,9 +33,20 @@ export default function Navbar() {
       style={{ backgroundColor: scrolled ? "#0A1A2E" : "transparent" }}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl tracking-wider transition-colors duration-300"
-          style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
-          GO BE LOVE
+        <Link href="/" className="flex items-center gap-2" aria-label="Go Be Love">
+          <Image
+            src="/gbl-logo.png"
+            alt="Go Be Love"
+            width={34}
+            height={38}
+            className="transition-all duration-300"
+            style={{ filter: scrolled ? "brightness(0) invert(1)" : "brightness(0)" }}
+          />
+          <span
+            className="font-display text-2xl tracking-wider transition-colors duration-300"
+            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
+            LOVE
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
