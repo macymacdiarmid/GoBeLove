@@ -9,21 +9,27 @@ export default function ImpactCounter() {
   ];
 
   return (
-    <section className="bg-deep py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-center gap-5 mb-16">
-          <Image
-            src="/gbl-logo.png"
-            alt="Go Be Love"
-            width={60}
-            height={67}
-            style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(148deg) brightness(0.9)", flexShrink: 0 }}
-          />
-          <p className="font-display tracking-widest uppercase leading-none"
-            style={{ fontSize: "67px", color: "#1ABFCC" }}>
-            Our Impact So Far
-          </p>
-        </div>
+    <section className="bg-deep py-24 px-6 relative overflow-hidden">
+
+      {/* Logo repeat pattern — offset brick grid */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          backgroundImage: "url('/gbl-logo.png'), url('/gbl-logo.png')",
+          backgroundRepeat: "repeat, repeat",
+          backgroundSize: "120px 134px, 120px 134px",
+          backgroundPosition: "0 0, 60px 67px",
+          filter: "invert(1)",
+          opacity: 0.07,
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <p className="font-display tracking-widest uppercase text-center mb-16"
+          style={{ fontSize: "clamp(18px, 3vw, 28px)", color: "#1ABFCC", letterSpacing: "0.25em" }}>
+          Our Impact So Far
+        </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
