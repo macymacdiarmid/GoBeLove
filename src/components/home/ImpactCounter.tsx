@@ -18,9 +18,9 @@ export default function ImpactCounter() {
         style={{
           backgroundImage: "url('/gbl-logo.png')",
           backgroundRepeat: "repeat",
-          backgroundSize: "180px",
+          backgroundSize: "220px",
           filter: "invert(1)",
-          opacity: 0.13,
+          opacity: 0.09,
         }}
       />
 
