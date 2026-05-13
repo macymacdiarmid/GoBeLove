@@ -17,8 +17,8 @@ export default function ImpactCounter() {
         <div style={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "52px",
-          padding: "26px",
+          gap: "15px",
+          padding: "8px",
           filter: "invert(1)",
           position: "absolute",
           top: "-26px", left: "-26px", right: "-26px", bottom: "-26px",
