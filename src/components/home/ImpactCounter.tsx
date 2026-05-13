@@ -11,17 +11,17 @@ export default function ImpactCounter() {
   return (
     <section className="bg-deep py-24 px-6 relative overflow-hidden">
 
-      {/* Logo repeat pattern — offset brick grid */}
+      {/* Logo large-scale background — two offset layers for depth */}
       <div
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
           backgroundImage: "url('/gbl-logo.png'), url('/gbl-logo.png')",
           backgroundRepeat: "repeat, repeat",
-          backgroundSize: "120px 134px, 120px 134px",
-          backgroundPosition: "0 0, 60px 67px",
+          backgroundSize: "420px 469px, 420px 469px",
+          backgroundPosition: "0 -60px, 210px 174px",
           filter: "invert(1)",
-          opacity: 0.07,
+          opacity: 0.09,
         }}
       />
 
