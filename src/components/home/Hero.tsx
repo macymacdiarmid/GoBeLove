@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-deep">
+    <section className="relative flex flex-col justify-end overflow-hidden bg-deep" style={{ minHeight: "78vh" }}>
 
       {/* Photo — cropped to focus on people, sky pushed off top */}
       <div className="absolute inset-0">
@@ -15,7 +15,7 @@ export default function Hero() {
           fill
           priority
           className="object-cover"
-          style={{ objectPosition: "center 65%" }}
+          style={{ objectPosition: "center 75%" }}
           sizes="100vw"
         />
       </div>
@@ -44,7 +44,7 @@ export default function Hero() {
           style={{ fontSize: "clamp(72px, 16vw, 180px)", letterSpacing: "-0.01em" }}
         >
           <span className="text-cream">GO<br />BE<br /></span>
-          <span style={{ color: "#FF3D8A" }}>LOVE.</span>
+          <span style={{ color: "#E84855" }}>LOVE.</span>
         </h1>
 
         {/* Sub */}
