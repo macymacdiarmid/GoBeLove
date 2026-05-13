@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      style={{ backgroundColor: scrolled ? "#0D2B1F" : "transparent" }}
+      style={{ backgroundColor: scrolled ? "#0A1A2E" : "transparent" }}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="font-display text-2xl tracking-wider text-cream">

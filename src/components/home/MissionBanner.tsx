@@ -23,12 +23,12 @@ export default function MissionBanner() {
 
         <div className="grid grid-cols-2 gap-4">
           {[
-            { word: "Joyful", bg: "#F7C842", color: "#5C3A00" },
-            { word: "Bold", bg: "#0D2B1F", color: "#F7C842" },
-            { word: "Hopeful", bg: "#1A936F", color: "#fff" },
-            { word: "Grounded", bg: "#F5F0E4", color: "#0D2B1F" },
-            { word: "Warm", bg: "#0D2B1F", color: "#E84855" },
-            { word: "Unstoppable", bg: "#F7C842", color: "#0D2B1F" },
+            { word: "Joyful", bg: "#F07820", color: "#5C3A00" },
+            { word: "Bold", bg: "#0A1A2E", color: "#F07820" },
+            { word: "Hopeful", bg: "#1ABFCC", color: "#fff" },
+            { word: "Grounded", bg: "#FFF5EC", color: "#0A1A2E" },
+            { word: "Warm", bg: "#0A1A2E", color: "#E83568" },
+            { word: "Unstoppable", bg: "#F07820", color: "#0A1A2E" },
           ].map(({ word, bg, color }) => (
             <div key={word} className="flex items-center justify-center py-5 px-4 text-center"
               style={{ backgroundColor: bg }}>

@@ -5,11 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold:   "#F7C842",
-        coral:  "#E84855",
-        teal:   "#1A936F",
-        deep:   "#0D2B1F",
-        cream:  "#F5F0E4",
+        gold:   "#F07820",
+        coral:  "#E83568",
+        teal:   "#1ABFCC",
+        deep:   "#0A1A2E",
+        cream:  "#FFF5EC",
         black:  "#0A0A0A",
       },
       fontFamily: {

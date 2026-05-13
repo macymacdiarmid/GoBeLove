@@ -48,7 +48,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <main className="bg-cream min-h-screen pt-20">
         {/* Gold bar */}
         <div className="h-2 flex">
-          {["#F7C842","#E84855","#1A936F","#0D2B1F","#F7C842","#E84855","#1A936F","#0D2B1F","#F7C842","#E84855","#1A936F","#0D2B1F"].map((c, i) => (
+          {["#F07820","#E83568","#1ABFCC","#0A1A2E","#F07820","#E83568","#1ABFCC","#0A1A2E","#F07820","#E83568","#1ABFCC","#0A1A2E"].map((c, i) => (
             <div key={i} className="flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>

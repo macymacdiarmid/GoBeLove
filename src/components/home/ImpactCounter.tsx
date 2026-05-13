@@ -27,7 +27,7 @@ export default function ImpactCounter() {
 
         {/* Kente-inspired pattern strip */}
         <div className="mt-20 flex overflow-hidden gap-0">
-          {["#F7C842", "#E84855", "#1A936F", "#F7C842", "#0D2B1F", "#F7C842", "#E84855", "#1A936F", "#F7C842", "#0D2B1F", "#F7C842", "#E84855"].map((c, i) => (
+          {["#F07820", "#E83568", "#1ABFCC", "#F07820", "#0A1A2E", "#F07820", "#E83568", "#1ABFCC", "#F07820", "#0A1A2E", "#F07820", "#E83568"].map((c, i) => (
             <div key={i} className="h-3 flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>

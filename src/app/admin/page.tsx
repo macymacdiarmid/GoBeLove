@@ -12,9 +12,9 @@ export default async function AdminDashboard() {
   ]);
 
   const stats = [
-    { label: "Products", value: productCount ?? 0, href: "/admin/products", bg: "#F7C842", color: "#0D2B1F" },
-    { label: "Orders",   value: orderCount   ?? 0, href: "/admin/orders",   bg: "#E84855", color: "#fff"    },
-    { label: "Users",    value: userCount    ?? 0, href: "/admin/users",    bg: "#1A936F", color: "#fff"    },
+    { label: "Products", value: productCount ?? 0, href: "/admin/products", bg: "#F07820", color: "#0A1A2E" },
+    { label: "Orders",   value: orderCount   ?? 0, href: "/admin/orders",   bg: "#E83568", color: "#fff"    },
+    { label: "Users",    value: userCount    ?? 0, href: "/admin/users",    bg: "#1ABFCC", color: "#0A1A2E" },
   ];
 
   return (

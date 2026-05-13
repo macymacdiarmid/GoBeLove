@@ -24,7 +24,7 @@ export default function Hero() {
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to bottom, rgba(13,43,31,0.05) 0%, rgba(13,43,31,0.15) 40%, rgba(13,43,31,0.75) 72%, rgba(13,43,31,0.95) 100%)",
+          background: "linear-gradient(to bottom, rgba(10,26,46,0.05) 0%, rgba(10,26,46,0.15) 40%, rgba(10,26,46,0.75) 72%, rgba(10,26,46,0.95) 100%)",
         }}
         aria-hidden="true"
       />
@@ -44,7 +44,7 @@ export default function Hero() {
           style={{ fontSize: "clamp(72px, 16vw, 180px)", letterSpacing: "-0.01em" }}
         >
           <span className="text-cream">GO<br />BE<br /></span>
-          <span style={{ color: "#E84855" }}>LOVE.</span>
+          <span style={{ color: "#E83568" }}>LOVE.</span>
         </h1>
 
         {/* Sub */}
