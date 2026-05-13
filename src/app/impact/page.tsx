@@ -69,13 +69,13 @@ export default function ImpactPage() {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  "https://images.unsplash.com/photo-1571417800906-5a5058dbd45d?w=400&q=80&fit=crop&auto=format",
-                  "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80&fit=crop&auto=format",
-                  "https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?w=400&q=80&fit=crop&auto=format",
-                  "https://images.unsplash.com/photo-1523881374236-dd34f6ac1226?w=400&q=80&fit=crop&auto=format",
-                ].map((src, i) => (
+                  { src: "/xhope-classroom-girl.jpg",    alt: "Girl in classroom at Xhope" },
+                  { src: "/xhope-classroom-waving.jpg",  alt: "Children waving in classroom" },
+                  { src: "/xhope-classroom-coloring.jpg",alt: "Children doing arts at Xhope" },
+                  { src: "/xhope-girl-smile.jpg",        alt: "Young girl smiling at Xhope" },
+                ].map((img, i) => (
                   <div key={i} className="relative overflow-hidden bg-deep" style={{ aspectRatio: "1" }}>
-                    <Image src={src} alt="Xhope children" fill className="object-cover" sizes="25vw" />
+                    <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="25vw" />
                   </div>
                 ))}
               </div>
@@ -86,12 +86,12 @@ export default function ImpactPage() {
         {/* Landscape strip */}
         <div className="grid grid-cols-3 h-64 md:h-96">
           {[
-            "https://images.unsplash.com/photo-1696963601946-606189e0851c?w=600&q=80&fit=crop&auto=format",
-            "https://images.unsplash.com/photo-1594068337983-b24ff1207b1b?w=600&q=80&fit=crop&auto=format",
-            "https://images.unsplash.com/photo-1704183683740-1400a49816b7?w=600&q=80&fit=crop&auto=format",
-          ].map((src, i) => (
+            { src: "/xhope-children-waving.jpg", alt: "Xhope children waving" },
+            { src: "/xhope-playground.jpg",       alt: "Xhope school playground" },
+            { src: "/xhope-team-children.jpg",    alt: "GBL team with Xhope children" },
+          ].map((img, i) => (
             <div key={i} className="relative overflow-hidden bg-deep">
-              <Image src={src} alt="Uganda" fill className="object-cover opacity-80" sizes="33vw" />
+              <Image src={img.src} alt={img.alt} fill className="object-cover opacity-80" sizes="33vw" />
             </div>
           ))}
         </div>

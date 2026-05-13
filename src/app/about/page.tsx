@@ -51,8 +51,8 @@ export default function AboutPage() {
               </div>
               <div className="relative overflow-hidden bg-deep" style={{ aspectRatio: "4/3" }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1571417800906-5a5058dbd45d?w=600&q=80&fit=crop&auto=format"
-                  alt="Children at Xhope" fill className="object-cover"
+                  src="/xhope-classroom-boy.jpg"
+                  alt="Child at Xhope Children's School, Uganda" fill className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative overflow-hidden bg-teal md:order-first" style={{ aspectRatio: "4/3" }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1696963601946-606189e0851c?w=600&q=80&fit=crop&auto=format"
+                  src="/xhope-uganda-landscape.jpg"
                   alt="Uganda landscape" fill className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
