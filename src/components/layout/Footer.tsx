@@ -21,7 +21,7 @@ export default function Footer() {
                 alt="Go Be Love"
                 width={72}
                 height={80}
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.9 }}
+                style={{ filter: "brightness(0) invert(1) sepia(0.1)", opacity: 0.9 }}
                 className="group-hover:opacity-100 transition-opacity"
               />
               <span className="font-display text-4xl text-cream tracking-wider leading-none pb-1">GO BE LOVE</span>

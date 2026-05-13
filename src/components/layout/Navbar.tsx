@@ -40,7 +40,7 @@ export default function Navbar() {
             width={34}
             height={38}
             className="transition-all duration-300"
-            style={{ filter: scrolled ? "brightness(0) invert(1)" : "brightness(0)" }}
+            style={{ filter: "brightness(0) invert(1) sepia(0.1)" }}
           />
           <span
             className="font-display text-2xl tracking-wider transition-colors duration-300"
