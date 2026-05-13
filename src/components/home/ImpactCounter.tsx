@@ -20,22 +20,23 @@ export default function ImpactCounter() {
           backgroundRepeat: "repeat",
           backgroundSize: "220px",
           filter: "invert(1)",
-          opacity: 0.09,
+          opacity: 0.05,
         }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <p className="font-display tracking-widest uppercase text-center mb-16"
-          style={{ fontSize: "clamp(18px, 3vw, 28px)", color: "#1ABFCC", letterSpacing: "0.25em" }}>
+          style={{ fontSize: "clamp(28px, 5vw, 52px)", color: "#1ABFCC", letterSpacing: "0.25em", textShadow: "0 2px 16px rgba(10,26,46,0.9), 0 0 40px rgba(10,26,46,0.6)" }}>
           Our Impact So Far
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-display leading-none text-gold mb-3" style={{ fontSize: "clamp(48px, 7vw, 88px)" }}>
+              <p className="font-display leading-none text-gold mb-3" style={{ fontSize: "clamp(48px, 7vw, 88px)", textShadow: "0 2px 20px rgba(10,26,46,0.95), 0 0 50px rgba(10,26,46,0.7)" }}>
                 {s.value}<span className="text-coral">{s.suffix}</span>
               </p>
-              <p className="font-body text-xs font-semibold tracking-widest uppercase text-cream/40">
+              <p className="font-body text-xs font-semibold tracking-widest uppercase text-cream/40"
+                style={{ textShadow: "0 1px 8px rgba(10,26,46,0.95)" }}>
                 {s.label}
               </p>
             </div>
