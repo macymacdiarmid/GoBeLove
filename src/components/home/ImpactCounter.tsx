@@ -11,19 +11,25 @@ export default function ImpactCounter() {
   return (
     <section className="bg-deep py-24 px-6 relative overflow-hidden">
 
-      {/* Logo large-scale background — two offset layers for depth */}
+      {/* Clean logo grid background */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 overflow-hidden pointer-events-none"
         aria-hidden="true"
-        style={{
-          backgroundImage: "url('/gbl-logo.png'), url('/gbl-logo.png')",
-          backgroundRepeat: "repeat, repeat",
-          backgroundSize: "420px 469px, 420px 469px",
-          backgroundPosition: "0 -60px, 210px 174px",
+        style={{ opacity: 0.13 }}
+      >
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, 115px)",
+          gap: "24px",
+          padding: "20px",
           filter: "invert(1)",
-          opacity: 0.09,
-        }}
-      />
+        }}>
+          {Array.from({ length: 80 }).map((_, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={i} src="/gbl-logo.png" alt="" width={115} style={{ display: "block" }} />
+          ))}
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <p className="font-display tracking-widest uppercase text-center mb-16"
