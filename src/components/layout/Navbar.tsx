@@ -45,7 +45,7 @@ export default function Navbar() {
           <span
             className="font-display text-2xl tracking-wider transition-colors duration-300"
             style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
-            LOVE
+            GO BE LOVE
           </span>
         </Link>
 

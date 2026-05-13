@@ -24,7 +24,7 @@ export default function Footer() {
                 style={{ filter: "brightness(0) invert(1)", opacity: 0.9 }}
                 className="group-hover:opacity-100 transition-opacity"
               />
-              <span className="font-display text-4xl text-cream tracking-wider leading-none pb-1">LOVE</span>
+              <span className="font-display text-4xl text-cream tracking-wider leading-none pb-1">GO BE LOVE</span>
             </Link>
             <p className="font-body text-sm leading-relaxed max-w-xs text-cream/50">
               Purpose-driven streetwear. Every hoodie funds a child&apos;s education at Xhope Children&apos;s School in Uganda.
