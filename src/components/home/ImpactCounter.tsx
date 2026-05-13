@@ -21,7 +21,8 @@ export default function ImpactCounter() {
           padding: "8px",
           filter: "invert(1)",
           position: "absolute",
-          top: "-26px", left: "-26px", right: "-26px", bottom: "-26px",
+          top: "-8px", left: "-8px", bottom: "-8px",
+          width: "calc(100% + 230px)",
           alignContent: "flex-start",
         }}>
           {Array.from({ length: 120 }).map((_, i) => (
