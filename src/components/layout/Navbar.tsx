@@ -32,34 +32,43 @@ export default function Navbar() {
       style={{ backgroundColor: scrolled ? "#0A1A2E" : "transparent" }}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl tracking-wider text-cream">
+        <Link href="/" className="font-display text-2xl tracking-wider transition-colors duration-300"
+          style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
           GO BE LOVE
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <Link key={l.href} href={l.href}
-              className="font-body text-sm font-semibold tracking-widest uppercase text-cream/70 hover:text-gold transition-colors">
+              className="font-body text-sm font-semibold tracking-widest uppercase transition-colors duration-300 hover:text-teal"
+              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
               {l.label}
             </Link>
           ))}
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/shop" aria-label="Cart" className="text-cream/70 hover:text-gold transition-colors">
+          <Link href="/shop" aria-label="Cart" className="transition-colors duration-300 hover:text-teal"
+            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
             <ShoppingBag size={20} />
           </Link>
           {user ? (
-            <Link href="/account" aria-label="Account" className="text-cream/70 hover:text-gold transition-colors">
+            <Link href="/account" aria-label="Account" className="transition-colors duration-300 hover:text-teal"
+              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
               <User size={20} />
             </Link>
           ) : (
             <Link href="/auth/login"
-              className="hidden md:inline-flex text-xs font-semibold tracking-widest uppercase border border-gold/60 text-gold hover:bg-gold hover:text-deep px-4 py-2 transition-all">
+              className="hidden md:inline-flex text-xs font-semibold tracking-widest uppercase px-4 py-2 transition-all duration-300"
+              style={scrolled
+                ? { border: "1px solid rgba(240,120,32,0.6)", color: "#F07820" }
+                : { border: "1px solid rgba(10,26,46,0.4)",   color: "#0A1A2E" }}>
               Sign In
             </Link>
           )}
-          <button onClick={() => setOpen(!open)} className="md:hidden text-cream/70 hover:text-gold" aria-label="Toggle menu">
+          <button onClick={() => setOpen(!open)} className="md:hidden transition-colors duration-300 hover:text-teal"
+            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}
+            aria-label="Toggle menu">
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>

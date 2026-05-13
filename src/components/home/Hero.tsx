@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col justify-end overflow-hidden bg-deep" style={{ minHeight: "78vh" }}>
+    <section className="relative flex flex-col justify-end overflow-hidden bg-deep" style={{ minHeight: "68vh" }}>
 
       {/* Photo — cropped to focus on people, sky pushed off top */}
       <div className="absolute inset-0">
@@ -43,7 +43,7 @@ export default function Hero() {
           className="font-display leading-none mb-6"
           style={{ fontSize: "clamp(72px, 16vw, 180px)", letterSpacing: "-0.01em" }}
         >
-          <span className="text-cream">GO<br />BE<br /></span>
+          <span className="text-cream">GO BE<br /></span>
           <span style={{ color: "#E83568" }}>LOVE.</span>
         </h1>
 
