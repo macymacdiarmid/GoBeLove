@@ -1,31 +1,34 @@
 export default function ImpactCounter() {
   const stats = [
-    { value: "47", label: "Children Sponsored", suffix: "" },
-    { value: "1,200", label: "Hoodies Sold", suffix: "+" },
-    { value: "12", label: "Countries Reached", suffix: "" },
-    { value: "100", label: "Profit to Xhope", suffix: "%" },
+    { value: "47", suffix: "", label: "Children Sponsored" },
+    { value: "1,200", suffix: "+", label: "Hoodies Sold" },
+    { value: "12", suffix: "", label: "Countries Reached" },
+    { value: "100", suffix: "%", label: "Profit to Xhope" },
   ];
 
   return (
-    <section style={{ backgroundColor: "#2D5E3F" }} className="py-24 px-6">
+    <section className="bg-deep py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <p className="text-xs font-bold tracking-widest uppercase mb-16 text-center" style={{ color: "rgba(245,237,216,0.5)" }}>
+        <p className="font-body text-xs font-bold tracking-widest uppercase text-gold/50 mb-16 text-center">
           Our Impact So Far
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p
-                className="font-serif font-black leading-none mb-3"
-                style={{ fontSize: "clamp(40px, 6vw, 72px)", color: "#F5EDD8" }}
-              >
-                {s.value}
-                <span style={{ color: "#D4963A" }}>{s.suffix}</span>
+              <p className="font-display leading-none text-gold mb-3" style={{ fontSize: "clamp(48px, 7vw, 88px)" }}>
+                {s.value}<span className="text-coral">{s.suffix}</span>
               </p>
-              <p className="text-xs font-medium tracking-widest uppercase" style={{ color: "rgba(245,237,216,0.45)" }}>
+              <p className="font-body text-xs font-semibold tracking-widest uppercase text-cream/40">
                 {s.label}
               </p>
             </div>
+          ))}
+        </div>
+
+        {/* Kente-inspired pattern strip */}
+        <div className="mt-20 flex overflow-hidden gap-0">
+          {["#F7C842", "#E84855", "#1A936F", "#F7C842", "#0D2B1F", "#F7C842", "#E84855", "#1A936F", "#F7C842", "#0D2B1F", "#F7C842", "#E84855"].map((c, i) => (
+            <div key={i} className="h-3 flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>
       </div>

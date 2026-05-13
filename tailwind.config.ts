@@ -5,17 +5,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        clay:   "#C4622D",
-        forest: "#2D5E3F",
-        cream:  "#F5EDD8",
-        ink:    "#232220",
-        amber:  "#D4963A",
-        coral:  "#E8836A",
-        mid:    "#D9CEB5",
+        gold:   "#F7C842",
+        coral:  "#E84855",
+        teal:   "#1A936F",
+        deep:   "#0D2B1F",
+        cream:  "#F5F0E4",
+        black:  "#0A0A0A",
       },
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans:  ["Inter", "system-ui", "sans-serif"],
+        display: ["'Bebas Neue'", "Impact", "'Arial Narrow'", "sans-serif"],
+        body:    ["'DM Sans'", "system-ui", "sans-serif"],
+      },
+      letterSpacing: {
+        widest2: "0.2em",
       },
     },
   },

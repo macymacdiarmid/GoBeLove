@@ -18,11 +18,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <Link href={`/shop/${product.slug}`} className="group block">
-      {/* Image */}
-      <div
-        className="relative overflow-hidden mb-4"
-        style={{ backgroundColor: "#2a2820", aspectRatio: "3/4" }}
-      >
+      <div className="relative overflow-hidden mb-4 bg-deep" style={{ aspectRatio: "3/4" }}>
         {image && (
           <Image
             src={image}
@@ -32,26 +28,13 @@ export default function ProductCard({ product }: ProductCardProps) {
             sizes="(max-width: 768px) 50vw, 25vw"
           />
         )}
-
-        {/* Quick-shop overlay */}
-        <div
-          className="absolute inset-x-0 bottom-0 py-4 text-center text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity"
-          style={{ backgroundColor: "#232220", color: "#F5EDD8" }}
-        >
+        <div className="absolute inset-x-0 bottom-0 py-3 text-center font-body text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity bg-gold text-deep">
           Quick View
         </div>
       </div>
-
-      {/* Info */}
-      <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: "#C4622D" }}>
-        {product.category}
-      </p>
-      <p className="font-serif font-bold text-base leading-tight mb-2" style={{ color: "#232220" }}>
-        {product.name}
-      </p>
-      <p className="text-sm font-medium" style={{ color: "#232220" }}>
-        {formatPrice(product.price)}
-      </p>
+      <p className="font-body text-xs font-bold tracking-widest uppercase text-teal mb-1">{product.category}</p>
+      <p className="font-display text-xl text-deep mb-1" style={{ letterSpacing: "0.04em" }}>{product.name.toUpperCase()}</p>
+      <p className="font-body text-sm font-semibold text-deep/70">{formatPrice(product.price)}</p>
     </Link>
   );
 }

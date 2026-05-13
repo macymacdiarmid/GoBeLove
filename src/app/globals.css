@@ -3,34 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --color-clay:   #C4622D;
-  --color-forest: #2D5E3F;
-  --color-cream:  #F5EDD8;
-  --color-ink:    #232220;
-  --color-amber:  #D4963A;
-  --color-coral:  #E8836A;
-  --color-mid:    #D9CEB5;
+  --gold:   #F7C842;
+  --coral:  #E84855;
+  --teal:   #1A936F;
+  --deep:   #0D2B1F;
+  --cream:  #F5F0E4;
+  --black:  #0A0A0A;
 }
 
 @layer base {
   html {
-    font-family: theme("fontFamily.sans");
+    font-family: "DM Sans", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
-
   body {
-    background-color: #F5EDD8;
-    color: #232220;
+    background-color: #F5F0E4;
+    color: #0A0A0A;
   }
-
-  * {
-    box-sizing: border-box;
-  }
-}
-
-@layer utilities {
-  .font-serif-custom {
-    font-family: theme("fontFamily.serif");
-  }
+  * { box-sizing: border-box; }
 }
