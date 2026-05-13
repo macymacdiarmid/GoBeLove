@@ -55,7 +55,7 @@ create trigger profiles_updated_at
 
 -- ── PRODUCTS ─────────────────────────────────────────────
 create table public.products (
-  id                  uuid primary key default uuid_generate_v4(),
+  id                  uuid primary key default gen_random_uuid(),
   name                text not null,
   slug                text not null unique,
   description         text,
@@ -79,7 +79,7 @@ create index products_active_idx on public.products(is_active);
 
 -- ── PRODUCT VARIANTS ─────────────────────────────────────
 create table public.product_variants (
-  id                  uuid primary key default uuid_generate_v4(),
+  id                  uuid primary key default gen_random_uuid(),
   product_id          uuid not null references public.products(id) on delete cascade,
   size                text not null,
   color               text not null,
@@ -95,7 +95,7 @@ create index variants_product_idx on public.product_variants(product_id);
 create type order_status as enum ('pending', 'confirmed', 'shipped', 'delivered', 'cancelled');
 
 create table public.orders (
-  id                uuid primary key default uuid_generate_v4(),
+  id                uuid primary key default gen_random_uuid(),
   user_id           uuid not null references public.profiles(id) on delete restrict,
   status            order_status not null default 'pending',
   total_amount      integer not null, -- cents
@@ -114,7 +114,7 @@ create index orders_status_idx on public.orders(status);
 
 -- ── ORDER ITEMS ──────────────────────────────────────────
 create table public.order_items (
-  id          uuid primary key default uuid_generate_v4(),
+  id          uuid primary key default gen_random_uuid(),
   order_id    uuid not null references public.orders(id) on delete cascade,
   product_id  uuid not null references public.products(id) on delete restrict,
   variant_id  uuid references public.product_variants(id) on delete set null,
@@ -127,7 +127,7 @@ create index order_items_order_idx on public.order_items(order_id);
 
 -- ── IMPACT STATS ─────────────────────────────────────────
 create table public.impact_stats (
-  id                  uuid primary key default uuid_generate_v4(),
+  id                  uuid primary key default gen_random_uuid(),
   children_sponsored  integer not null default 0,
   hoodies_sold        integer not null default 0,
   countries_reached   integer not null default 0,
