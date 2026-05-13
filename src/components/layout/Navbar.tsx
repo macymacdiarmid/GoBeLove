@@ -43,8 +43,8 @@ export default function Navbar() {
             style={{ filter: scrolled ? "brightness(0) invert(1)" : "brightness(0)" }}
           />
           <span
-            className="font-display text-2xl tracking-wider transition-colors duration-300"
-            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
+            className="font-display tracking-wider transition-colors duration-300 leading-none"
+            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E", fontSize: "38px" }}>
             GO BE LOVE
           </span>
         </Link>

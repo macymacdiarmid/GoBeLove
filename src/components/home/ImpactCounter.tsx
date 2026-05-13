@@ -11,18 +11,19 @@ export default function ImpactCounter() {
   return (
     <section className="bg-deep py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-center mb-8">
+        <div className="flex items-center gap-5 mb-16">
           <Image
             src="/gbl-logo.png"
             alt="Go Be Love"
             width={60}
             height={67}
-            style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(148deg) brightness(0.9)" }}
+            style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(148deg) brightness(0.9)", flexShrink: 0 }}
           />
+          <p className="font-display tracking-widest uppercase text-gold/50 leading-none"
+            style={{ fontSize: "67px" }}>
+            Our Impact So Far
+          </p>
         </div>
-        <p className="font-body text-xs font-bold tracking-widest uppercase text-gold/50 mb-16 text-center">
-          Our Impact So Far
-        </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
