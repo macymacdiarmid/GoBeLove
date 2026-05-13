@@ -11,7 +11,7 @@ export default function ImpactCounter() {
   return (
     <section className="bg-deep py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-5 mb-16">
+        <div className="flex items-center justify-center gap-5 mb-16">
           <Image
             src="/gbl-logo.png"
             alt="Go Be Love"
@@ -19,8 +19,8 @@ export default function ImpactCounter() {
             height={67}
             style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(148deg) brightness(0.9)", flexShrink: 0 }}
           />
-          <p className="font-display tracking-widest uppercase text-gold/50 leading-none"
-            style={{ fontSize: "67px" }}>
+          <p className="font-display tracking-widest uppercase leading-none"
+            style={{ fontSize: "67px", color: "#1ABFCC" }}>
             Our Impact So Far
           </p>
         </div>

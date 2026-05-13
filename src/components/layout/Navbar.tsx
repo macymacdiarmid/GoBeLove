@@ -33,7 +33,7 @@ export default function Navbar() {
       style={{ backgroundColor: scrolled ? "#0A1A2E" : "transparent" }}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" aria-label="Go Be Love">
+        <Link href="/" className="flex items-center" style={{ gap: "1em" }} aria-label="Go Be Love">
           <Image
             src="/gbl-logo.png"
             alt="Go Be Love"
@@ -43,8 +43,8 @@ export default function Navbar() {
             style={{ filter: scrolled ? "brightness(0) invert(1)" : "brightness(0)" }}
           />
           <span
-            className="font-display tracking-wider transition-colors duration-300 leading-none"
-            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E", fontSize: "38px" }}>
+            className="font-display text-2xl tracking-wider transition-colors duration-300"
+            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
             GO BE LOVE
           </span>
         </Link>
