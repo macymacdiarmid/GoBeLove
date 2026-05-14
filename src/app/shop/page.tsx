@@ -34,7 +34,7 @@ export default function ShopPage() {
 
         {/* Colour strip */}
         <div className="flex h-3">
-          {["#E83568","#1ABFCC","#F07820","#0A1A2E","#E83568","#1ABFCC","#F07820","#0A1A2E","#E83568","#1ABFCC","#F07820","#0A1A2E"].map((c, i) => (
+          {["#D84727","#5EB1BF","#EF7B45","#042A2B","#D84727","#5EB1BF","#EF7B45","#042A2B","#D84727","#5EB1BF","#EF7B45","#042A2B"].map((c, i) => (
             <div key={i} className="flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>

@@ -7,10 +7,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = { title: "Impact" };
 
 const STATS = [
-  { value: "47",   suffix: "",  label: "Children Sponsored", bg: "#F07820", color: "#0A1A2E" },
-  { value: "1,200",suffix: "+", label: "Hoodies Sold",       bg: "#E83568", color: "#fff"    },
-  { value: "12",   suffix: "",  label: "Countries Reached",  bg: "#1ABFCC", color: "#fff"    },
-  { value: "100",  suffix: "%", label: "Profit to Xhope",    bg: "#0A1A2E", color: "#F07820" },
+  { value: "47",   suffix: "",  label: "Children Sponsored", bg: "#EF7B45", color: "#042A2B" },
+  { value: "1,200",suffix: "+", label: "Hoodies Sold",       bg: "#D84727", color: "#fff"    },
+  { value: "12",   suffix: "",  label: "Countries Reached",  bg: "#5EB1BF", color: "#fff"    },
+  { value: "100",  suffix: "%", label: "Profit to Xhope",    bg: "#042A2B", color: "#EF7B45" },
 ];
 
 export default function ImpactPage() {

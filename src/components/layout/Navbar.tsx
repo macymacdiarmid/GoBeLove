@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      style={{ backgroundColor: scrolled ? "#0A1A2E" : "transparent" }}
+      style={{ backgroundColor: scrolled ? "#042A2B" : "transparent" }}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center" style={{ gap: "1em" }} aria-label="Go Be Love">
@@ -44,7 +44,7 @@ export default function Navbar() {
           />
           <span
             className="font-display text-2xl tracking-wider transition-colors duration-300"
-            style={{ color: scrolled ? "#FFF5EC" : "#0A1A2E" }}>
+            style={{ color: scrolled ? "#FFF5EC" : "#042A2B" }}>
             GO BE LOVE
           </span>
         </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
           {links.map((l) => (
             <Link key={l.href} href={l.href}
               className="font-body text-sm font-semibold tracking-widest uppercase transition-colors duration-300 hover:text-teal"
-              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
+              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#042A2B" }}>
               {l.label}
             </Link>
           ))}
@@ -61,25 +61,25 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link href="/shop" aria-label="Cart" className="transition-colors duration-300 hover:text-teal"
-            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
+            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#042A2B" }}>
             <ShoppingBag size={20} />
           </Link>
           {user ? (
             <Link href="/account" aria-label="Account" className="transition-colors duration-300 hover:text-teal"
-              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}>
+              style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#042A2B" }}>
               <User size={20} />
             </Link>
           ) : (
             <Link href="/auth/login"
               className="hidden md:inline-flex text-xs font-semibold tracking-widest uppercase px-4 py-2 transition-all duration-300"
               style={scrolled
-                ? { border: "1px solid rgba(240,120,32,0.6)", color: "#F07820" }
-                : { border: "1px solid rgba(10,26,46,0.4)",   color: "#0A1A2E" }}>
+                ? { border: "1px solid rgba(240,120,32,0.6)", color: "#EF7B45" }
+                : { border: "1px solid rgba(10,26,46,0.4)",   color: "#042A2B" }}>
               Sign In
             </Link>
           )}
           <button onClick={() => setOpen(!open)} className="md:hidden transition-colors duration-300 hover:text-teal"
-            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#0A1A2E" }}
+            style={{ color: scrolled ? "rgba(255,245,236,0.7)" : "#042A2B" }}
             aria-label="Toggle menu">
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>

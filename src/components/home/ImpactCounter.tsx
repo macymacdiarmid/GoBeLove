@@ -34,17 +34,17 @@ export default function ImpactCounter() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <p className="font-display tracking-widest uppercase text-center mb-16"
-          style={{ fontSize: "clamp(28px, 5vw, 52px)", color: "#1ABFCC", letterSpacing: "0.25em", textShadow: "0 2px 16px rgba(10,26,46,0.9), 0 0 40px rgba(10,26,46,0.6)" }}>
+          style={{ fontSize: "clamp(28px, 5vw, 52px)", color: "#5EB1BF", letterSpacing: "0.25em", textShadow: "0 2px 16px rgba(4,42,43,0.9), 0 0 40px rgba(4,42,43,0.6)" }}>
           Our Impact So Far
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-display leading-none text-gold mb-3" style={{ fontSize: "clamp(48px, 7vw, 88px)", textShadow: "0 2px 20px rgba(10,26,46,0.95), 0 0 50px rgba(10,26,46,0.7)" }}>
+              <p className="font-display leading-none text-gold mb-3" style={{ fontSize: "clamp(48px, 7vw, 88px)", textShadow: "0 2px 20px rgba(4,42,43,0.95), 0 0 50px rgba(4,42,43,0.7)" }}>
                 {s.value}<span className="text-coral">{s.suffix}</span>
               </p>
               <p className="font-body text-xs font-semibold tracking-widest uppercase text-cream/40"
-                style={{ textShadow: "0 1px 8px rgba(10,26,46,0.95)" }}>
+                style={{ textShadow: "0 1px 8px rgba(4,42,43,0.95)" }}>
                 {s.label}
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function ImpactCounter() {
 
         {/* Kente-inspired pattern strip */}
         <div className="mt-20 flex overflow-hidden gap-0">
-          {["#F07820", "#E83568", "#1ABFCC", "#F07820", "#0A1A2E", "#F07820", "#E83568", "#1ABFCC", "#F07820", "#0A1A2E", "#F07820", "#E83568"].map((c, i) => (
+          {["#EF7B45", "#D84727", "#5EB1BF", "#EF7B45", "#042A2B", "#EF7B45", "#D84727", "#5EB1BF", "#EF7B45", "#042A2B", "#EF7B45", "#D84727"].map((c, i) => (
             <div key={i} className="h-3 flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>

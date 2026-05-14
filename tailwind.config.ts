@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold:   "#F07820",
-        coral:  "#E83568",
-        teal:   "#1ABFCC",
-        deep:   "#0A1A2E",
+        gold:   "#EF7B45",
+        coral:  "#D84727",
+        teal:   "#5EB1BF",
+        deep:   "#042A2B",
         cream:  "#FFF5EC",
         black:  "#0A0A0A",
       },

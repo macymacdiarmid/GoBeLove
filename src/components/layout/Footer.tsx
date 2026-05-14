@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Kente strip */}
         <div className="flex overflow-hidden mb-12">
-          {["#F07820","#E83568","#1ABFCC","#F07820","#0A1A2E","#F07820","#E83568","#1ABFCC","#F07820","#E83568","#1ABFCC","#F07820"].map((c, i) => (
+          {["#EF7B45","#D84727","#5EB1BF","#EF7B45","#042A2B","#EF7B45","#D84727","#5EB1BF","#EF7B45","#D84727","#5EB1BF","#EF7B45"].map((c, i) => (
             <div key={i} className="h-2 flex-1" style={{ backgroundColor: c }} />
           ))}
         </div>
